@@ -98,7 +98,8 @@ header {
     top: 0%;
 } */
 
-#top-nav-bar.sticky{
-    position: sticky;
+#top-navbar.sticky{
+    position: fixed;
     margin-top: 0;
+    top:0%
 }
