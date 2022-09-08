@@ -3,4 +3,102 @@
     --secor-dark-blue: #18427b;
     --secor-green: #4dc765;
     --secor-light-green: #8CBF3F;
+
+    --near-black: #1e1e1e;
+    --light-grey: #e7e7e7;
+}
+
+.color-white {
+    background-color: whitesmoke;
+    color: var(--near-black);
+}
+
+.color-secor-blue {
+    background-color: var(--secor-light-blue);
+    color: whitesmoke;
+}
+
+.color-secor-blue-dark {
+    background-color: var(--secor-dark-blue);
+    color: whitesmoke;
+}
+
+.color-light-grey {
+    background-color: var(--light-grey);
+    color: var(--near-black);
+}
+
+.card img {
+    width: 100%;
+}
+
+.no-border {
+    border: none;
+}
+
+.border-bottom {
+    border-bottom: 1px solid;
+}
+
+header {
+    min-height: 380px;
+    position: relative;
+}
+
+.banner-image {
+    background-image: url("../images/placeHolderBird1.jpg");
+    min-height: 380px;
+    height: 100%;
+    width: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#float-block {
+    position: absolute;
+    top: 25%;
+    left: 5%
+
+}
+
+#homeButton {
+    height: 3rem;
+}
+
+#top-navbar {
+    position: absolute;
+    bottom: 0%;
+    left: 0%;
+    right: 0%;
+    height: 3.5rem;
+    overflow: hidden;
+    color: var(--secor-dark-blue);
+    padding: 0;
+}
+
+#top-navbar a{
+    padding: 3rem 0.33rem;
+    text-decoration: none;
+    text-align: center;
+    font-weight: bold;
+}
+
+#top-navbar a:hover:not(#homeLink){
+    background-color: var(--secor-light-blue);
+    color: whitesmoke;
+}
+
+#top-navbar a:hover#homeLink{
+    background-color: whitesmoke;
+    color: whitesmoke;
+}
+
+/* #top-navbar:not(.sticky) {
+    top: 0%;
+} */
+
+#top-nav-bar.sticky{
+    position: sticky;
+    margin-top: 0;
 }
